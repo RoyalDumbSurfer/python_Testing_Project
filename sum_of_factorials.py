@@ -4,6 +4,7 @@ def sum_of_fac():
     res_fac = 0
     if n < 0:
         print('wrong number')
+        exit()
     else:
         for i in range(1, n + 1):
             part_fac *= i
