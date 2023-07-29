@@ -1,5 +1,8 @@
-sum = 0
-for i in range(10):
-    number = int(input())
-    sum += number
-print(sum)
+for i in range(3):
+    i += 1
+    print(i)
+    for j in range(4):
+        j += 1
+        print(j)
+        if j == 2:
+            print('oops')
