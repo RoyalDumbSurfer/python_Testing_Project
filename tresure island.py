@@ -7,16 +7,16 @@ sjw XXXXXXXXXXXXXXXXXAx      '---_/_\_
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ''')
 print("Welcome to Surfers Paradise!")
-name = input("What's your name? ")
+name = input("What's your name?\n")
 print(f"{name}, your mission is to catch the Barrel on a secret spot!!!")
 
-wave = input("Wave coming! Which wave is it: Left, type 'Left', or Right, type 'Right'? ").lower()
+wave = input("Wave coming! Which wave is it: Left, type 'Left', or Right, type 'Right'?\n").lower()
 
 if wave == "right":
-    wave_type = input("Barrel, type 'Barrel', or open face, type 'Open face'? ").lower()
+    wave_type = input("Barrel, type 'Barrel', or open face, type 'Open face'?\n").lower()
 
     if wave_type == "barrel":
-        barrel_type = input("Which kind of barrel? choose: 'Backdoor', 'Easy shape' or 'Airdrop slab' ").lower()
+        barrel_type = input("Which kind of barrel? choose: 'Backdoor', 'Easy shape' or 'Airdrop slab'\n").lower()
 
         if barrel_type == "backdoor":
             print(f"{name}, you was dropped-in by locals. You so hungry for waves, they said. You dead. Game over ;(")
