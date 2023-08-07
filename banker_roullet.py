@@ -3,7 +3,7 @@ import random
 names_string = input("Give me everybody's names, separated by a comma. \n")
 names = names_string.split(", ")
 
-pay_bill_index = random.randint(0, len(names))
+pay_bill_index = random.randint(0, len(names) - 1)
 pay_bill_name = names[pay_bill_index]
 print(f"{pay_bill_name} is going to buy the meal today!")
 
