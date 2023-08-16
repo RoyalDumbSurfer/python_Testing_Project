@@ -25,3 +25,8 @@ elif 40 <= love_index <= 50:
     print(f"Your score is {love_index}, you are alright together.")
 else:
     print(f"Your score is {love_index}.")
+
+a = [1, 2, 3, 4, 5]
+b = [5, 4, 3, 2, 1]
+c = [i for i in a if i in b]
+print(c)
