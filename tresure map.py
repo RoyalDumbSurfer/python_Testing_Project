@@ -7,7 +7,7 @@ position = input("Where do you want to put the treasure? ")
 
 column = int(position[1])
 row = int(position[0])
-treasure = 'x'
+treasure = 'X'
 map[column-1][row-1] = treasure
 
 
