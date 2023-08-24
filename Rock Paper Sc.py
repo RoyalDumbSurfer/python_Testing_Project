@@ -55,3 +55,5 @@ elif ai_choice == 3 and user_choice == 1:
 elif ai_choice == 3 and user_choice == 2:
     print(f"{paper_3}\n{rock_2}")
     print(f"You Lose, {user_name}! 🥱")
+else:
+    print(f"You typed an invalid number, {user_name}!")
