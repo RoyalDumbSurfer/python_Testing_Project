@@ -36,7 +36,7 @@ print(f"Welcome to the Game, {user_name}!")
 user_choice = int(input("Choose one of the options: type '0'- scissors, type '1' - rock, type '2' - paper\n"))
 ai_choice = random.randint(0, 2)
 
-if user_choice > 2:
+if user_choice > 2 or user_choice < 0:
     print(f"You typed an invalid number, {user_name}!")
 else:
     print(f"{user_name} choice:\n")
