@@ -8,24 +8,19 @@ nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input("How many symbols would you like?\n"))
 nr_numbers = int(input("How many numbers would you like?\n"))
 
-new_letters = []
-for l in range(0, nr_letters):
-    new_letters += random.choice(letters)
+new_pass = []
+for l in range(1, nr_letters + 1):
+    new_pass.append(random.choice(letters))
 
-new_numbers = []
-for n in range(0, nr_numbers):
-    new_numbers += random.choice(numbers)
+for n in range(1, nr_numbers + 1):
+    new_pass.append(random.choice(numbers))
 
-new_symbols = []
-for s in range(0, nr_symbols):
-    new_symbols += random.choice(symbols)
-
-
-new_pass = (new_letters + new_symbols + new_numbers)
+for s in range(1, nr_symbols + 1):
+    new_pass.append(random.choice(symbols))
 
 random.shuffle(new_pass)
-
 print("Your super strong password: ")
 for t in new_pass:
     print(t, end='')
+
 
